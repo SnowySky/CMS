@@ -1,5 +1,5 @@
 @maincolor: rgb(217, 224, 227); //main background color
-@mainhovercolor: rgb(208, 214, 217); //hover on main background color
+@hoverColor: rgba(197,204,207,0.25); //hover on main background color
 @menucolor: rgb(66, 66, 66); //menu background color
 @darktextcolor: #575757; //main text color
 @full-percent: 100%;
@@ -134,47 +134,80 @@ html, body{
     width: @square-height*1.8;
 
     &:hover{
-      background-color: @mainhovercolor;
+      background-color: @hoverColor;
+    }
+  }
+  .top{
+    height: 10%;
+    width: @full-percent;
+
+    .title{
+      padding-left: 10%;
+      float: left;
+    }
+    .icons{
+      float: right;
+      height: 100%;
+      width: 5%;
+
+      #add{
+        float: left;
+        width: @full-percent;
+        height: @full-percent;
+        background-image: url(img/add.svg);
+        .backgroundAsIcon;
+
+        &:hover{
+          cursor: pointer;
+          background-size: 55%;
+        }
+      }
+    }
+  }
+  .window{
+    height: 90%;
+    width: @full-percent - 3%;
+    overflow-y: visible;
+    overflow-x: hidden;
+
+    .note{
+      width: @full-percent - 3%;
+      margin: 1% 0 0 10%;
+      padding: 1%;
+      .lightBorderBottom
+    }
+  }
+  .big-square{
+    float: right;
+    @height: @square-height*1.567;
+    height: @height;
+    width: @height*0.76;
+
+    &:hover{
+      background-color: @hoverColor;
     }
 
     .top{
       height: 10%;
       width: @full-percent;
 
-      .title{
-        padding-left: 10%;
+      .title {
+        padding-left: 14%;
         float: left;
-      }
-      .icons{
-        float: right;
-        height: 100%;
-        width: 5%;
-
-        #add{
-          float: left;
-          width: @full-percent;
-          height: @full-percent;
-          background-image: url(img/add.svg);
-          .backgroundAsIcon;
-
-          &:hover{
-            cursor: pointer;
-            background-size: 55%;
-          }
-        }
       }
     }
     .window{
       height: 90%;
-      width: @full-percent - 3%;
+      width: @full-percent;
       overflow-y: visible;
       overflow-x: hidden;
 
-      .note{
-        width: @full-percent - 3%;
-        margin: 1% 0 0 10%;
+      .article{
+        float: left;
+        width: @full-percent - 10%;
+        margin: 2.5% 0 0 16%;
         padding: 1%;
-        .lightBorderBottom
+        .lightBorderBottom;
       }
     }
   }

@@ -97,22 +97,22 @@ body {
   width: 59.985%;
 }
 #window .rectangle:hover {
-  background-color: #d0d6d9;
+  background-color: rgba(197, 204, 207, 0.25);
 }
-#window .rectangle .top {
+#window .top {
   height: 10%;
   width: 100%;
 }
-#window .rectangle .top .title {
+#window .top .title {
   padding-left: 10%;
   float: left;
 }
-#window .rectangle .top .icons {
+#window .top .icons {
   float: right;
   height: 100%;
   width: 5%;
 }
-#window .rectangle .top .icons #add {
+#window .top .icons #add {
   float: left;
   width: 100%;
   height: 100%;
@@ -122,20 +122,49 @@ body {
   background-repeat: no-repeat;
   background-position: center;
 }
-#window .rectangle .top .icons #add:hover {
+#window .top .icons #add:hover {
   cursor: pointer;
   -webkit-background-size: 55%;
   background-size: 55%;
 }
-#window .rectangle .window {
+#window .window {
   height: 90%;
   width: 97%;
   overflow-y: visible;
   overflow-x: hidden;
 }
-#window .rectangle .window .note {
+#window .window .note {
   width: 97%;
   margin: 1% 0 0 10%;
+  padding: 1%;
+  border-bottom: 1px solid rgba(200, 200, 200, 0.75);
+}
+#window .big-square {
+  float: right;
+  height: 52.220275%;
+  width: 39.687409%;
+}
+#window .big-square:hover {
+  background-color: rgba(197, 204, 207, 0.25);
+}
+#window .big-square .top {
+  height: 10%;
+  width: 100%;
+}
+#window .big-square .top .title {
+  padding-left: 14%;
+  float: left;
+}
+#window .big-square .window {
+  height: 90%;
+  width: 100%;
+  overflow-y: visible;
+  overflow-x: hidden;
+}
+#window .big-square .window .article {
+  float: left;
+  width: 90%;
+  margin: 2.5% 0 0 16%;
   padding: 1%;
   border-bottom: 1px solid rgba(200, 200, 200, 0.75);
 }

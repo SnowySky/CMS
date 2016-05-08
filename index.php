@@ -47,6 +47,27 @@
             <div class="window">
                 <!-- TODO: Написать скрипт для добавления записей пока хотя бы только на страницу до обновления, потом переписать на php, чтобы добавлялись в БД-->
                 <div class="note">Test note</div>
+                <div class="note">Test note</div>
+                <div class="note">Test note</div>
+                <div class="note">Test note</div>
+            </div>
+        </div>
+        <div class = "big-square">
+            <div class="top">
+                <div class="title">Last articles</div>
+            </div>
+            <div class="window">
+                <div class="article">Test article</div>
+                <div class="article">Test article</div>
+                <div class="article">Test article</div>
+                <div class="article">Test article</div>
+                <div class="article">Test article</div>
+                <div class="article">Test article</div>
+                <div class="article">Test article</div>
+                <div class="article">Test article</div>
+                <div class="article">Test article</div>
+                <div class="article">Test article</div>
+                <div class="article">Test article</div>
             </div>
         </div>
     </div>
