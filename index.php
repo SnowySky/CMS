@@ -1,57 +1,4 @@
-<!doctype html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <title>Admin Panel</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <!-- Slide left menu block -->
-    <div id="menu">
-        <div class = "title">
-            Menu
-        </div>
-        <div class="links">
-            <div class="link">
-                Home Page
-            </div>
-            <div class="link">
-                Articles
-                <div class="sub-links">
-                    <div class="sub-link">New article</div>
-                    <div class="sub-link">List of articles</div>
-                    <div class="sub-link">List of drafts</div>
-                </div>
-            </div>
-            <div class="link">
-                Categories
-                <div class="sub-links">
-                    <div class="sub-link">New category</div>
-                    <div class="sub-link">List of categories</div>
-                    <div class="sub-link">Styles of categories</div>
-                </div>
-            </div>
-            <div class="link">
-                Plugins
-            </div>
-            <div class="link">
-                Primitives
-                <div class="sub-links">
-                    <div class="sub-link">New primitive</div>
-                    <div class="sub-link">List of primitives</div>
-                </div>
-            </div>
-            <div class="link">
-                Notes
-                <div class="sub-links">
-                    <div class="sub-link">New note</div>
-                    <div class="sub-link">List of notes</div>
-                </div>
-            </div>
-            <div class="link">Settings</div>
-        </div>
-    </div>
-    <!-- Main window block -->
+<?php require_once "admin-header.php"; ?>
     <div id="window">
         <!--Greetings message-->
         <div class = "big_line">
@@ -110,5 +57,4 @@
             </div>
         </div>
     </div>
-</body>
-</html>
+<?php require_once "admin-footer.php"; ?>
