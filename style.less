@@ -1,10 +1,13 @@
 @maincolor: rgb(217, 224, 227); //main background color
 @hoverColor: rgba(197,204,207,0.25); //hover on main background color
 @menucolor: rgb(66, 66, 66); //menu background color
+@menuhovercolor: rgb(76, 76, 76); //menu hover color
 @darktextcolor: #575757; //main text color
+//size for math calcs
 @full-percent: 100%;
-@half-percent: 50%;
-@part-percent: 25%;
+@half-percent: @full-percent / 2;
+@part-percent: @half-percent / 2;
+@min-percent: @full-percent / 100;
 @min-border-size: 1px;
 //set the paddings from top-bot, left-right;
 .padding(@ptop, @pbot, @pleft, @pright){
@@ -20,7 +23,7 @@
 }
 //set active background like an icon on a main page
 .backgroundAsIcon(){
-  background-size: 50% 50%;
+  background-size: @half-percent @half-percent;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -43,10 +46,10 @@ html, body{
 #menu{
   float: left;
   position: fixed;
-  width: 15%;
+  width: @min-percent * 15;
   height: @full-percent;
   background-color: @menucolor;
-  margin-left: -13%;
+  margin-left: -@min-percent * 12.5;
 
   *{
     color: white;
@@ -56,34 +59,53 @@ html, body{
     margin-left: 0;
   }
 
-  &-title{
-    font-size: 120%;
-    .padding(5%, 0%, 35%, 0%);
+ .title{
+    width: @full-percent;
+    font-size: @full-percent + @part-percent - 5%;
+    .padding(@min-percent * 3, 0, 0, 0);
+    text-align: center;
+  }
+
+  .links{
+    width: @full-percent;
+    height: @full-percent - 5 * @min-percent;
+    margin-top: 5 * @min-percent;
+
+    .link {
+      width: @full-percent;
+      height: @min-percent * 5;
+      .padding(@min-percent * 10, 0, 0, 0);
+      text-align: center;
+
+      &:hover{
+        background-color: @menuhovercolor;
+        cursor: pointer;
+      }
+    }
   }
 
 }
 
 #window{
   float: left;
-  width: 98%;
-  margin-left: 2%;
+  width: @full-percent - @min-percent * 2;
+  margin-left: @min-percent * 2;
   height: @full-percent;
 
   * {
     color: @darktextcolor;
 
     .title{
-      font-size: 150%;
-      .padding(1%,0%,5%,0%);
+      font-size: @full-percent + @half-percent;
+      .padding(@min-percent,0,@min-percent * 5,0);
     }
 
     .text{
-      font-size: 110%;
-      .padding(0.5%, 2%, 0%, 0%);
-
-      width: 90%;
+      font-size: @full-percent + @min-percent * 10%;
+      .padding(@min-percent * 0.5, @min-percent * 2, 0, 0);
+      width: @full-percent - @min-percent * 10;
       text-align: justify;
-      line-height: 1.5;
+      line-height: @full-percent + @half-percent;
     }
   }
 
@@ -109,8 +131,8 @@ html, body{
       width: @full-percent;
       height: @full-percent;
       text-align: center;
-      font-size: 130%;
-      .padding(5%, 0%, 0%, 0%);
+      font-size: @full-percent + 30 * @min-percent;
+      .padding(@min-percent * 5, 0, 0, 0);
     }
   }
   #add_note{
@@ -130,7 +152,7 @@ html, body{
   }
   .rectangle{
     float: left;
-    height: @square-height*1.567;
+    height: @square-height*1.5;
     width: @square-height*1.8;
 
     &:hover{
@@ -138,17 +160,17 @@ html, body{
     }
   }
   .top{
-    height: 10%;
+    height: 10 * @min-percent;
     width: @full-percent;
 
     .title{
-      padding-left: 10%;
+      padding-left: 10 * @min-percent;
       float: left;
     }
     .icons{
       float: right;
-      height: 100%;
-      width: 5%;
+      height: @full-percent;
+      width: 10 * @min-percent;
 
       #add{
         float: left;
@@ -159,27 +181,27 @@ html, body{
 
         &:hover{
           cursor: pointer;
-          background-size: 55%;
+          background-size: @part-percent;
         }
       }
     }
   }
   .window{
-    height: 90%;
-    width: @full-percent - 3%;
+    height: @full-percent - 10 * @min-percent;
+    width: @full-percent - 3 * @min-percent;
     overflow-y: visible;
     overflow-x: hidden;
 
     .note{
-      width: @full-percent - 3%;
-      margin: 1% 0 0 10%;
-      padding: 1%;
+      width: @full-percent - 3 * @min-percent;
+      margin: @min-percent 0 0 10 * @min-percent;
+      padding: @min-percent;
       .lightBorderBottom
     }
   }
   .big-square{
     float: right;
-    @height: @square-height*1.567;
+    @height: @square-height*1.5;
     height: @height;
     width: @height*0.76;
 
@@ -188,25 +210,25 @@ html, body{
     }
 
     .top{
-      height: 10%;
+      height: @min-percent * 10;
       width: @full-percent;
 
       .title {
-        padding-left: 14%;
+        padding-left: @min-percent * 14;
         float: left;
       }
     }
     .window{
-      height: 90%;
+      height: @full-percent - @min-percent * 10;
       width: @full-percent;
       overflow-y: visible;
       overflow-x: hidden;
 
       .article{
         float: left;
-        width: @full-percent - 10%;
-        margin: 2.5% 0 0 16%;
-        padding: 1%;
+        width: @full-percent - @min-percent * 10;
+        margin: @min-percent * 2.5 0 0 @min-percent * 16;
+        padding: @min-percent;
         .lightBorderBottom;
       }
     }

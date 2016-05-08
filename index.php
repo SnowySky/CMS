@@ -8,8 +8,17 @@
 <body>
     <!-- Slide left menu block -->
     <div id="menu">
-        <div id = "menu-title">
+        <div class = "title">
             Menu
+        </div>
+        <div class="links">
+            <!--TODO: Скрипт, чтобы отображались всплывающие меню. Пока не делать -->
+            <div class="link">Home Page</div>
+            <div class="link">Articles</div>
+            <div class="link">Folders</div>
+            <div class="link">Plugins</div>
+            <div class="link">Primitives</div>
+            <div class="link">Settings</div>
         </div>
     </div>
     <!-- Main window block -->
