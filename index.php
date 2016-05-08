@@ -12,12 +12,35 @@
             Menu
         </div>
         <div class="links">
-            <!--TODO: Скрипт, чтобы отображались всплывающие меню. Пока не делать -->
-            <div class="link">Home Page</div>
-            <div class="link">Articles</div>
-            <div class="link">Folders</div>
-            <div class="link">Plugins</div>
-            <div class="link">Primitives</div>
+            <div class="link">
+                Home Page
+            </div>
+            <div class="link">
+                Articles
+                <div class="sub-links">
+                    <div class="sub-link">New article</div>
+                    <div class="sub-link">List of articles</div>
+                    <div class="sub-link">List of drafts</div>
+                </div>
+            </div>
+            <div class="link">
+                Categories
+                <div class="sub-links">
+                    <div class="sub-link">New category</div>
+                    <div class="sub-link">List of categories</div>
+                    <div class="sub-link">Styles of categories</div>
+                </div>
+            </div>
+            <div class="link">
+                Plugins
+            </div>
+            <div class="link">
+                Primitives
+                <div class="sub-links">
+                    <div class="sub-link">New primitive</div>
+                    <div class="sub-link">List of primitives</div>
+                </div>
+            </div>
             <div class="link">Settings</div>
         </div>
     </div>
@@ -34,7 +57,7 @@
            <div class = "square-text">Add article</div>
         </div>
         <div class = "square" id = "folder">
-            <div class = "square-text">Folders</div>
+            <div class = "square-text">Categories</div>
         </div>
         <div class = "square" id = "plugin">
             <div class="square-text">Plugins</div>

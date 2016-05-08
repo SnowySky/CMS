@@ -80,6 +80,25 @@ html, body{
       &:hover{
         background-color: @menuhovercolor;
         cursor: pointer;
+
+        div{
+          display: block;
+        }
+      }
+      .sub-links{
+        width: @full-percent;
+        background-color: @menucolor;
+        display: none;
+        margin: -@min-percent * 18.1 0 0 @min-percent * 100;
+
+        * {
+          padding-top: @min-percent * 5;
+          padding-bottom: @min-percent * 5;
+
+          &:hover{
+            background-color: @menuhovercolor;
+          }
+        }
       }
     }
   }

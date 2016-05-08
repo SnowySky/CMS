@@ -48,6 +48,22 @@ body {
   background-color: #4c4c4c;
   cursor: pointer;
 }
+#menu .links .link:hover div {
+  display: block;
+}
+#menu .links .link .sub-links {
+  width: 100%;
+  background-color: #424242;
+  display: none;
+  margin: -18.1% 0 0 100%;
+}
+#menu .links .link .sub-links * {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+#menu .links .link .sub-links *:hover {
+  background-color: #4c4c4c;
+}
 #window {
   float: left;
   width: 98%;
