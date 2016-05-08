@@ -144,6 +144,7 @@ html, body{
     &:hover{
       background-color: lightblue;
       cursor: pointer;
+      background-size: @half-percent - 10 * @min-percent;
     }
 
     &-text{
@@ -189,18 +190,18 @@ html, body{
     .icons{
       float: right;
       height: @full-percent;
-      width: 10 * @min-percent;
+      width: 6 * @min-percent;
 
       #add{
         float: left;
-        width: @full-percent;
+        width: @full-percent*1.15;
         height: @full-percent;
         background-image: url(img/add.svg);
         .backgroundAsIcon;
 
         &:hover{
           cursor: pointer;
-          background-size: @part-percent;
+          background-size: @part-percent*1.5;
         }
       }
     }

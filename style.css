@@ -101,6 +101,8 @@ body {
 #window .square:hover {
   background-color: lightblue;
   cursor: pointer;
+  -webkit-background-size: 40%;
+  background-size: 40%;
 }
 #window .square-text {
   width: 100%;
@@ -143,11 +145,11 @@ body {
 #window .top .icons {
   float: right;
   height: 100%;
-  width: 10%;
+  width: 6%;
 }
 #window .top .icons #add {
   float: left;
-  width: 100%;
+  width: 115%;
   height: 100%;
   background-image: url(img/add.svg);
   -webkit-background-size: 50% 50%;
@@ -157,8 +159,8 @@ body {
 }
 #window .top .icons #add:hover {
   cursor: pointer;
-  -webkit-background-size: 25%;
-  background-size: 25%;
+  -webkit-background-size: 37.5%;
+  background-size: 37.5%;
 }
 #window .window {
   height: 90%;
