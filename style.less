@@ -133,10 +133,10 @@ html, body{
     .lightBorderBottom;
   }
 
-  @square-height: @part-percent*1.333;
+  @square-height: @part-percent * 1.333;
   .square{
     height: @square-height;
-    width: @square-height*0.6;
+    width: @square-height * 0.6;
     float: left;
     .backgroundAsIcon;
     .lightBorderBottom;
@@ -155,7 +155,28 @@ html, body{
       .padding(@min-percent * 5, 0, 0, 0);
     }
   }
-  #add_note{
+  .squareArticle{
+    height: @square-height;
+    width: @square-height;
+    float: left;
+    .backgroundAsIcon;
+    .lightBorderBottom;
+
+    &:hover{
+      background-color: lightblue;
+      cursor: pointer;
+      background-size: @half-percent - 28 * @min-percent;
+    }
+
+    &-text{
+      width: @full-percent;
+      height: @full-percent;
+      text-align: center;
+      font-size: @full-percent + 30 * @min-percent;
+      .padding(@min-percent * 5, 0, 0, 0);
+    }
+  }
+  #add_article{
     background-image: url(img/note.svg);
   }
   #folder{
@@ -169,6 +190,12 @@ html, body{
   }
   #settings{
     background-image: url(img/settings.svg);
+  }
+  #list{
+    background-image: url(img/list.svg);
+  }
+  #pattern{
+    background-image: url(img/pattern.svg);
   }
   .rectangle{
     float: left;

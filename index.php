@@ -1,4 +1,7 @@
-<?php require_once "admin-header.php"; ?>
+<?php
+    $page_name = "Home page";
+    require_once "admin-header.php";
+?>
     <div id="window">
         <!--Greetings message-->
         <div class = "big_line">
@@ -7,7 +10,7 @@
         </div>
         <!--Squares of quick access to main functions of CMS-->
         <!--TODO: Написать скрипт для перерасчета размеров квадратов после каждого обновления экрана чтобы при смене разрешений они не теряли формы-->
-        <div class = "square" id = "add_note">
+        <div class = "square" id = "add_article">
            <div class = "square-text">Add article</div>
         </div>
         <div class = "square" id = "folder">

@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Admin Panel</title>
+    <title><?=$page_name?></title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -20,7 +20,7 @@
                 <div class="sub-links">
                     <div class="sub-link">New article</div>
                     <div class="sub-link">List of articles</div>
-                    <div class="sub-link">List of drafts</div>
+                    <div class="sub-link">List of patterns</div>
                 </div>
             </div>
             <div class="link">
