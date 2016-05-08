@@ -1,0 +1,181 @@
+@maincolor: rgb(217, 224, 227); //main background color
+@mainhovercolor: rgb(208, 214, 217); //hover on main background color
+@menucolor: rgb(66, 66, 66); //menu background color
+@darktextcolor: #575757; //main text color
+@full-percent: 100%;
+@half-percent: 50%;
+@part-percent: 25%;
+@min-border-size: 1px;
+//set the paddings from top-bot, left-right;
+.padding(@ptop, @pbot, @pleft, @pright){
+  padding: @ptop @pright @pbot @pleft;
+}
+//transparent light borders
+.lightBorderBottom(){
+  border-bottom: @min-border-size solid rgba(200,200,200,0.75);
+}
+.lightBordersRightBottom(){
+  border-right: @min-border-size solid rgba(200,200,200,0.75);
+  border-bottom: @min-border-size solid rgba(200,200,200,0.75);
+}
+//set active background like an icon on a main page
+.backgroundAsIcon(){
+  background-size: 50% 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@font-face{
+  font-family: MainFont;
+  src: url(fonts/mainfont.otf);
+}
+*{
+  margin: 0 auto;
+  padding: 0;
+  font-family: MainFont;
+}
+html, body{
+  background-color: @maincolor;
+  width: @full-percent;
+  height: @full-percent;
+}
+
+#menu{
+  float: left;
+  position: fixed;
+  width: 15%;
+  height: @full-percent;
+  background-color: @menucolor;
+  margin-left: -13%;
+
+  *{
+    color: white;
+  }
+
+  &:hover{
+    margin-left: 0;
+  }
+
+  &-title{
+    font-size: 120%;
+    .padding(5%, 0%, 35%, 0%);
+  }
+
+}
+
+#window{
+  float: left;
+  width: 98%;
+  margin-left: 2%;
+  height: @full-percent;
+
+  * {
+    color: @darktextcolor;
+
+    .title{
+      font-size: 150%;
+      .padding(1%,0%,5%,0%);
+    }
+
+    .text{
+      font-size: 110%;
+      .padding(0.5%, 2%, 0%, 0%);
+
+      width: 90%;
+      text-align: justify;
+      line-height: 1.5;
+    }
+  }
+
+  .big_line{
+    width: @full-percent;
+    .lightBorderBottom;
+  }
+
+  @square-height: @part-percent*1.333;
+  .square{
+    height: @square-height;
+    width: @square-height*0.6;
+    float: left;
+    .backgroundAsIcon;
+    .lightBorderBottom;
+
+    &:hover{
+      background-color: lightblue;
+      cursor: pointer;
+    }
+
+    &-text{
+      width: @full-percent;
+      height: @full-percent;
+      text-align: center;
+      font-size: 130%;
+      .padding(5%, 0%, 0%, 0%);
+    }
+  }
+  #add_note{
+    background-image: url(img/note.svg);
+  }
+  #folder{
+    background-image: url(img/folder.svg);
+  }
+  #plugin{
+    background-image: url(img/plugin.svg);
+  }
+  #primitives{
+    background-image: url(img/primitives.svg);
+  }
+  #settings{
+    background-image: url(img/settings.svg);
+  }
+  .rectangle{
+    float: left;
+    height: @square-height*1.567;
+    width: @square-height*1.8;
+
+    &:hover{
+      background-color: @mainhovercolor;
+    }
+
+    .top{
+      height: 10%;
+      width: @full-percent;
+
+      .title{
+        padding-left: 10%;
+        float: left;
+      }
+      .icons{
+        float: right;
+        height: 100%;
+        width: 5%;
+
+        #add{
+          float: left;
+          width: @full-percent;
+          height: @full-percent;
+          background-image: url(img/add.svg);
+          .backgroundAsIcon;
+
+          &:hover{
+            cursor: pointer;
+            background-size: 55%;
+          }
+        }
+      }
+    }
+    .window{
+      height: 90%;
+      width: @full-percent - 3%;
+      overflow-y: visible;
+      overflow-x: hidden;
+
+      .note{
+        width: @full-percent - 3%;
+        margin: 1% 0 0 10%;
+        padding: 1%;
+        .lightBorderBottom
+      }
+    }
+  }
+}

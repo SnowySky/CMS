@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Slide left menu block -->
+    <div id="menu">
+        <div id = "menu-title">
+            Menu
+        </div>
+    </div>
+    <!-- Main window block -->
+    <div id="window">
+        <!--Greetings message-->
+        <div class = "big_line">
+            <div class="title">TestCMS</div>
+            <div class = "text">Welcome to TestCMS MainPage. How can you see, there's no information here. But, if everything will go nice, this project'll be finished</div>
+        </div>
+        <!--Squares of quick access to main functions of CMS-->
+        <!--TODO: Написать скрипт для перерасчета размеров квадратов после каждого обновления экрана чтобы при смене разрешений они не теряли формы-->
+        <div class = "square" id = "add_note">
+           <div class = "square-text">Add article</div>
+        </div>
+        <div class = "square" id = "folder">
+            <div class = "square-text">Folders</div>
+        </div>
+        <div class = "square" id = "plugin">
+            <div class="square-text">Plugins</div>
+        </div>
+        <div class = "square" id = "primitives">
+            <div class="square-text">Primitives</div>
+        </div>
+        <div class = "square" id = "settings">
+            <div class="square-text">Settings</div>
+        </div>
+        <!--Notes rectangle-->
+        <div class="rectangle">
+            <div class="top">
+                <div class="title">Notes</div>
+                <div class="icons">
+                    <div id = "add"></div>
+                </div>
+            </div>
+            <div class="window">
+                <!-- TODO: Написать скрипт для добавления записей пока хотя бы только на страницу до обновления, потом переписать на php, чтобы добавлялись в БД-->
+                <div class="note">Test note</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

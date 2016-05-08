@@ -1,0 +1,141 @@
+@font-face {
+  font-family: MainFont;
+  src: url(fonts/mainfont.otf);
+}
+* {
+  margin: 0 auto;
+  padding: 0;
+  font-family: MainFont;
+}
+html,
+body {
+  background-color: #d9e0e3;
+  width: 100%;
+  height: 100%;
+}
+#menu {
+  float: left;
+  position: fixed;
+  width: 15%;
+  height: 100%;
+  background-color: #424242;
+  margin-left: -13%;
+}
+#menu * {
+  color: white;
+}
+#menu:hover {
+  margin-left: 0;
+}
+#menu-title {
+  font-size: 120%;
+  padding: 5% 0% 0% 35%;
+}
+#window {
+  float: left;
+  width: 98%;
+  margin-left: 2%;
+  height: 100%;
+}
+#window * {
+  color: #575757;
+}
+#window * .title {
+  font-size: 150%;
+  padding: 1% 0% 0% 5%;
+}
+#window * .text {
+  font-size: 110%;
+  padding: 0.5% 0% 2% 0%;
+  width: 90%;
+  text-align: justify;
+  line-height: 1.5;
+}
+#window .big_line {
+  width: 100%;
+  border-bottom: 1px solid rgba(200, 200, 200, 0.75);
+}
+#window .square {
+  height: 33.325%;
+  width: 19.995%;
+  float: left;
+  -webkit-background-size: 50% 50%;
+  background-size: 50% 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-bottom: 1px solid rgba(200, 200, 200, 0.75);
+}
+#window .square:hover {
+  background-color: lightblue;
+  cursor: pointer;
+}
+#window .square-text {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-size: 130%;
+  padding: 5% 0% 0% 0%;
+}
+#window #add_note {
+  background-image: url(img/note.svg);
+}
+#window #folder {
+  background-image: url(img/folder.svg);
+}
+#window #plugin {
+  background-image: url(img/plugin.svg);
+}
+#window #primitives {
+  background-image: url(img/primitives.svg);
+}
+#window #settings {
+  background-image: url(img/settings.svg);
+}
+#window .rectangle {
+  float: left;
+  height: 52.220275%;
+  width: 59.985%;
+}
+#window .rectangle:hover {
+  background-color: #d0d6d9;
+}
+#window .rectangle .top {
+  height: 10%;
+  width: 100%;
+}
+#window .rectangle .top .title {
+  padding-left: 10%;
+  float: left;
+}
+#window .rectangle .top .icons {
+  float: right;
+  height: 100%;
+  width: 5%;
+}
+#window .rectangle .top .icons #add {
+  float: left;
+  width: 100%;
+  height: 100%;
+  background-image: url(img/add.svg);
+  -webkit-background-size: 50% 50%;
+  background-size: 50% 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#window .rectangle .top .icons #add:hover {
+  cursor: pointer;
+  -webkit-background-size: 55%;
+  background-size: 55%;
+}
+#window .rectangle .window {
+  height: 90%;
+  width: 97%;
+  overflow-y: visible;
+  overflow-x: hidden;
+}
+#window .rectangle .window .note {
+  width: 97%;
+  margin: 1% 0 0 10%;
+  padding: 1%;
+  border-bottom: 1px solid rgba(200, 200, 200, 0.75);
+}
