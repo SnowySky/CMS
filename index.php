@@ -41,7 +41,7 @@
                 <div class="note">Test note</div>
             </div>
         </div>
-        <div class = "big-square-right">
+        <div class = "big-square">
             <div class="top">
                 <div class="title">Last articles</div>
             </div>
