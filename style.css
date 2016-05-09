@@ -13,6 +13,9 @@ body {
   width: 100%;
   height: 100%;
 }
+textarea {
+  resize: none;
+}
 #menu {
   float: left;
   position: fixed;
@@ -171,6 +174,9 @@ body {
   padding-left: 10%;
   float: left;
 }
+#window .top .title textarea {
+  padding-top: 2%;
+}
 #window .top .icons {
   float: right;
   height: 100%;
@@ -203,32 +209,104 @@ body {
   padding: 1%;
   border-bottom: 1px solid rgba(200, 200, 200, 0.75);
 }
-#window .big-square {
+#window .window form {
+  padding-top: 2%;
+}
+#window .window form textarea {
+  width: 90%;
+  margin-left: 9%;
+}
+#window .big-square-right {
   float: right;
   height: 49.9875%;
   width: 37.9905%;
 }
-#window .big-square:hover {
+#window .big-square-right:hover {
   background-color: rgba(197, 204, 207, 0.25);
 }
-#window .big-square .top {
+#window .big-square-right .top {
   height: 10%;
   width: 100%;
 }
-#window .big-square .top .title {
+#window .big-square-right .top .title {
   padding-left: 14%;
   float: left;
 }
-#window .big-square .window {
+#window .big-square-right .window {
   height: 90%;
   width: 100%;
   overflow-y: visible;
   overflow-x: hidden;
 }
-#window .big-square .window .article {
+#window .big-square-right .window .article {
   float: left;
   width: 90%;
   margin: 2.5% 0 0 16%;
   padding: 1%;
   border-bottom: 1px solid rgba(200, 200, 200, 0.75);
+}
+#window .big-square-right .window .control-squares {
+  width: 20%;
+  height: 20%;
+  float: left;
+  text-align: center;
+  padding-top: 7.5%;
+  color: transparent;
+  border-bottom: 1px solid rgba(200, 200, 200, 0.75);
+  -webkit-background-size: 50% 50%;
+  background-size: 50% 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#window .big-square-right .window .control-squares:hover {
+  -webkit-background-size: 0 0;
+  background-size: 0 0;
+  background-color: rgba(200, 100, 100, 0.5);
+  cursor: pointer;
+  color: #575757;
+}
+#window .big-square-right .window #add_1_title {
+  background-image: url(img/special_tags/H1.png);
+}
+#window .big-square-right .window #add_2_title {
+  background-image: url(img/special_tags/H2.png);
+}
+#window .big-square-right .window #add_3_title {
+  background-image: url(img/special_tags/H3.png);
+}
+#window .big-square-right .window #add_4_title {
+  background-image: url(img/special_tags/H4.png);
+}
+#window .big-square-right .window #add_5_title {
+  background-image: url(img/special_tags/H5.png);
+}
+#window .big-square-right .window #add_p {
+  background-image: url(img/special_tags/paragraph.png);
+}
+#window .big-square-right .window #add_b {
+  background-image: url(img/special_tags/bold.png);
+}
+#window .big-square-right .window #add_i {
+  background-image: url(img/special_tags/italic.png);
+}
+#window .big-square-right .window #add_u {
+  background-image: url(img/special_tags/underline.png);
+}
+#window .big-square-right .window #add_s {
+  background-image: url(img/special_tags/strikeout.png);
+}
+#window .big-square-right .window #add_img {
+  background-image: url(img/special_tags/img.png);
+}
+#window .big-square-right .window #add_href {
+  background-image: url(img/special_tags/href.png);
+}
+#window .big-square-right .window #add_blockquote {
+  background-image: url(img/special_tags/blockquote.png);
+}
+#window .big-square-right .window #add_abbr {
+  background-image: url(img/special_tags/abbr.png);
+}
+#window .big-square-right .window #add_sup {
+  background-image: url(img/special_tags/sup.png);
 }

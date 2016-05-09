@@ -42,6 +42,9 @@ html, body{
   width: @full-percent;
   height: @full-percent;
 }
+textarea{
+  resize: none;
+}
 
 #menu{
   float: left;
@@ -213,6 +216,10 @@ html, body{
     .title{
       padding-left: 10 * @min-percent;
       float: left;
+
+      textarea{
+        padding-top: 2 * @min-percent;
+      }
     }
     .icons{
       float: right;
@@ -245,8 +252,18 @@ html, body{
       padding: @min-percent;
       .lightBorderBottom
     }
+
+    form:extend(.note){
+      padding-top: 2 * @min-percent;
+      textarea{
+        width: @full-percent - 10 * @min-percent;
+        margin-left: 9%;
+      }
+    };
+
+
   }
-  .big-square{
+  .big-square-right{
     float: right;
     @height: @square-height*1.5;
     height: @height;
@@ -277,6 +294,70 @@ html, body{
         margin: @min-percent * 2.5 0 0 @min-percent * 16;
         padding: @min-percent;
         .lightBorderBottom;
+      }
+
+      .control-squares{
+        width: @part-percent - 5 * @min-percent;
+        height: @part-percent - 5 * @min-percent;
+        float: left;
+        text-align: center;
+        padding-top: 7.5 * @min-percent;
+        color: transparent;
+        .lightBorderBottom;
+        .backgroundAsIcon;
+
+        &:hover{
+          background-size: 0 0;
+          background-color: rgba(200,100,100, 0.5);
+          cursor: pointer;
+          color: @darktextcolor;
+        }
+      }
+
+      #add_1_title{
+        background-image: url(img/special_tags/H1.png);
+      }
+      #add_2_title{
+        background-image: url(img/special_tags/H2.png);
+      }
+      #add_3_title{
+        background-image: url(img/special_tags/H3.png);
+      }
+      #add_4_title{
+        background-image: url(img/special_tags/H4.png);
+      }
+      #add_5_title{
+        background-image: url(img/special_tags/H5.png);
+      }
+      #add_p{
+        background-image: url(img/special_tags/paragraph.png);
+      }
+      #add_b{
+        background-image: url(img/special_tags/bold.png);
+      }
+      #add_i{
+        background-image: url(img/special_tags/italic.png);
+      }
+      #add_u{
+        background-image: url(img/special_tags/underline.png);
+      }
+      #add_s{
+        background-image: url(img/special_tags/strikeout.png);
+      }
+      #add_img{
+        background-image: url(img/special_tags/img.png);
+      }
+      #add_href{
+        background-image: url(img/special_tags/href.png);
+      }
+      #add_blockquote{
+        background-image: url(img/special_tags/blockquote.png);
+      }
+      #add_abbr{
+        background-image: url(img/special_tags/abbr.png);
+      }
+      #add_sup{
+        background-image: url(img/special_tags/sup.png);
       }
     }
   }
