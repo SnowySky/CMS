@@ -26,7 +26,7 @@
                 </form>
             </div>
         </div>
-        <div class="big-square-right">
+        <div class="big-square">
             <div class="top">
                 <div class="title">Special tags</div>
             </div>
