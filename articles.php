@@ -88,8 +88,15 @@
                     <div class = "meta_text">Description: </div><textarea name = "meta_desc" required form="new_article"></textarea>
                     <div class = "meta_text">Keywords: </div><textarea name = "meta_keywords" required form="new_article"></textarea>
                     <div class = "meta_text">Author: </div><textarea name = "meta_author" required form="new_article"></textarea>
-                    <input type = "submit" form = "new_article" value="Submit">
                 </form>
+            </div>
+        </div>
+        <div class="big-square right">
+            <div class="top">
+                <div class="title">Save</div>
+            </div>
+            <div class="window">
+                <!--Save square, locked or unlocked -->
             </div>
         </div>
     </div>

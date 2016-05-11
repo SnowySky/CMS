@@ -60,6 +60,11 @@ input[type="submit"]{
     background-color: @hoverColor;
   }
 }
+select{
+  padding-top: @min-percent;
+  margin-left: @min-percent;
+  margin-top: @min-percent * 0.5;
+}
 .left {
   float: left;
 }
@@ -283,6 +288,9 @@ input[type="submit"]{
         margin-top: @min-percent;
         margin-right: @min-percent;
       }
+      select{
+        width: @half-percent;
+      }
     };
 
 
@@ -336,6 +344,18 @@ input[type="submit"]{
         }
       }
 
+      #save_square{
+        width: @full-percent;
+        height: @full-percent;
+        .backgroundAsIcon;
+      }
+      .locked {
+        background-image: url(img/locked.png);
+      }
+      .unlocked{
+        background-image: url(img/unlocked.png)
+      }
+
       #add_1_title{
         background-image: url(img/special_tags/H1.png);
       }
@@ -378,7 +398,7 @@ input[type="submit"]{
       #add_abbr{
         background-image: url(img/special_tags/abbr.png);
       }
-      #add_sup{
+      #add_sup {
         background-image: url(img/special_tags/sup.png);
       }
     }
