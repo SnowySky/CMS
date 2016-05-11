@@ -3,6 +3,8 @@
 @menucolor: rgb(66, 66, 66); //menu background color
 @menuhovercolor: rgb(76, 76, 76); //menu hover color
 @darktextcolor: #575757; //main text color
+@bordercolor: rgba(200,200,200,0.75); //border color
+@borderhovercolor: rgba(150,150,150,0.8); //border hover color
 //size for math calcs
 @full-percent: 100%;
 @half-percent: @full-percent / 2;
@@ -15,11 +17,11 @@
 }
 //transparent light borders
 .lightBorderBottom(){
-  border-bottom: @min-border-size solid rgba(200,200,200,0.75);
+  border-bottom: @min-border-size solid @bordercolor;
 }
 .lightBordersRightBottom(){
-  border-right: @min-border-size solid rgba(200,200,200,0.75);
-  border-bottom: @min-border-size solid rgba(200,200,200,0.75);
+  border-right: @min-border-size solid @bordercolor;
+  border-bottom: @min-border-size solid @bordercolor;
 }
 //set active background like an icon on a main page
 .backgroundAsIcon(){
@@ -45,9 +47,27 @@ html, body{
 textarea{
   resize: none;
 }
+input[type="submit"]{
+  width: @min-percent * 10;
+  height: @min-percent * 20;
+  padding-top: @min-percent * 0.5;
+  border-radius: 10px;
+  outline: none;
+  border: @min-border-size solid @bordercolor;
+  color: @darktextcolor;
+
+  &:hover{
+    background-color: @hoverColor;
+  }
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
 
 #menu{
-  float: left;
   position: fixed;
   width: @min-percent * 15;
   height: @full-percent;
@@ -109,7 +129,6 @@ textarea{
 }
 
 #window{
-  float: left;
   width: @full-percent - @min-percent * 2;
   margin-left: @min-percent * 2;
   height: @full-percent;
@@ -140,7 +159,6 @@ textarea{
   .square{
     height: @square-height;
     width: @square-height * 0.6;
-    float: left;
     .backgroundAsIcon;
     .lightBorderBottom;
 
@@ -161,7 +179,6 @@ textarea{
   .squareArticle{
     height: @square-height;
     width: @square-height;
-    float: left;
     .backgroundAsIcon;
     .lightBorderBottom;
 
@@ -201,7 +218,6 @@ textarea{
     background-image: url(img/pattern.svg);
   }
   .rectangle{
-    float: left;
     height: @square-height*1.5;
     width: @square-height*1.8;
 
@@ -214,20 +230,18 @@ textarea{
     width: @full-percent;
 
     .title{
-      padding-left: 10 * @min-percent;
       float: left;
+      padding-left: 10 * @min-percent;
 
       textarea{
         padding-top: 2 * @min-percent;
       }
     }
     .icons{
-      float: right;
       height: @full-percent;
       width: 6 * @min-percent;
 
       #add{
-        float: left;
         width: @full-percent*1.15;
         height: @full-percent;
         background-image: url(img/add.svg);
@@ -253,18 +267,27 @@ textarea{
       .lightBorderBottom
     }
 
+    .meta_text{
+      padding-left: @min-percent * 9;
+      padding-bottom: @min-percent;
+    }
+
     form:extend(.note){
       padding-top: 2 * @min-percent;
       textarea{
         width: @full-percent - 10 * @min-percent;
-        margin-left: 9%;
+        margin-left: 9 * @min-percent;
+      }
+      input[type="submit"]{
+        float: right;
+        margin-top: @min-percent;
+        margin-right: @min-percent;
       }
     };
 
 
   }
   .big-square{
-    float: right;
     @height: @square-height*1.5;
     height: @height;
     width: @height*0.76;
@@ -274,12 +297,12 @@ textarea{
     }
 
     .top{
+      float: left;
       height: @min-percent * 10;
       width: @full-percent;
 
       .title {
         padding-left: @min-percent * 14;
-        float: left;
       }
     }
     .window{
@@ -299,7 +322,6 @@ textarea{
       .control-squares{
         width: @part-percent - 5 * @min-percent;
         height: @part-percent - 5 * @min-percent;
-        float: left;
         text-align: center;
         padding-top: 7.5 * @min-percent;
         color: transparent;

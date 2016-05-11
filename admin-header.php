@@ -7,7 +7,7 @@
 </head>
 <body>
     <!-- Slide left menu block -->
-    <div id="menu">
+    <div id="menu" class = "left">
         <div class = "title">
             Menu
         </div>
