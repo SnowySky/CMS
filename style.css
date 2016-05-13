@@ -300,10 +300,24 @@ select {
   background-position: center;
 }
 #window .big-square .window .locked {
-  background-image: url(img/locked.png);
+  width: 100%;
+  height: 100%;
+  background-image: url(img/locked.svg);
+  -webkit-background-size: 50% 50%;
+  background-size: 50% 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: not-allowed;
 }
 #window .big-square .window .unlocked {
-  background-image: url(img/unlocked.png);
+  width: 100%;
+  height: 100%;
+  background-image: url(img/unlocked.svg);
+  -webkit-background-size: 50% 50%;
+  background-size: 50% 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
 }
 #window .big-square .window #add_1_title {
   background-image: url(img/special_tags/H1.png);

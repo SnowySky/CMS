@@ -50,13 +50,6 @@
                 <div class="article">Test article</div>
                 <div class="article">Test article</div>
                 <div class="article">Test article</div>
-                <div class="article">Test article</div>
-                <div class="article">Test article</div>
-                <div class="article">Test article</div>
-                <div class="article">Test article</div>
-                <div class="article">Test article</div>
-                <div class="article">Test article</div>
-                <div class="article">Test article</div>
             </div>
         </div>
     </div>

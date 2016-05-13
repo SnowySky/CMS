@@ -349,11 +349,19 @@ select{
         height: @full-percent;
         .backgroundAsIcon;
       }
-      .locked {
-        background-image: url(img/locked.png);
+      .locked{
+        width: @full-percent;
+        height: @full-percent;
+        background-image: url(img/locked.svg);
+        .backgroundAsIcon;
+        cursor: not-allowed;
       }
       .unlocked{
-        background-image: url(img/unlocked.png)
+        width: @full-percent;
+        height: @full-percent;
+        background-image: url(img/unlocked.svg);
+        .backgroundAsIcon;
+        cursor: pointer;
       }
 
       #add_1_title{
