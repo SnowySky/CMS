@@ -22,7 +22,7 @@
             </div>
             <div class="window">
                 <form id = "new_article">
-                    <textarea name = "input-text" rows = "20" name = "article_text" placeholder="Write your text here." required ></textarea>
+                    <textarea name = "input-text" rows = "17" name = "article_text" placeholder="Write your text here." required ></textarea>
                 </form>
             </div>
         </div>
@@ -106,6 +106,9 @@
             </div>
             <div class="window">
             </div>
+        </div>
+        <div class="big-square right">
+
         </div>
     </div>
 <?php require_once "admin-footer.php"; ?>
