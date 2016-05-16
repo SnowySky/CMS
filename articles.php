@@ -105,64 +105,131 @@
             </div>
             <div class="window">
                 <div class="grid">
-                    <div class = "text">Article 1</div>
+                    <div class = "text for-article">Article 1</div>
+                    <div class = "text category-name">For $category_name category</div>
+                    <div class="buttons_grid_top grid_element" ></div>
+                    <div class="buttons_grid_left grid_element"></div>
+                    <div class="buttons_grid_right grid_element"></div>
+                </div>
+                <div class="grid">
+                    <div class = "text for-article">Article 2</div>
+                    <div class = "text category-name">For $category_name category</div>
                     <div class="buttons_grid_top grid_element"></div>
                     <div class="buttons_grid_left grid_element"></div>
                     <div class="buttons_grid_right grid_element"></div>
                 </div>
                 <div class="grid">
-                    <div class = "text">Article 2</div>
+                    <div class = "text for-article">Article 3</div>
+                    <div class = "text category-name">For $category_name category</div>
                     <div class="buttons_grid_top grid_element"></div>
                     <div class="buttons_grid_left grid_element"></div>
                     <div class="buttons_grid_right grid_element"></div>
                 </div>
                 <div class="grid">
-                    <div class = "text">Article 3</div>
+                    <div class = "text for-article">Article 4</div>
+                    <div class = "text category-name">For $category_name category</div>
                     <div class="buttons_grid_top grid_element"></div>
                     <div class="buttons_grid_left grid_element"></div>
                     <div class="buttons_grid_right grid_element"></div>
                 </div>
                 <div class="grid">
-                    <div class = "text">Article 4</div>
+                    <div class = "text for-article">Article 5</div>
+                    <div class = "text category-name">For $category_name category</div>
                     <div class="buttons_grid_top grid_element"></div>
                     <div class="buttons_grid_left grid_element"></div>
                     <div class="buttons_grid_right grid_element"></div>
                 </div>
                 <div class="grid">
-                    <div class = "text">Article 5</div>
+                    <div class = "text for-article">Article 6</div>
+                    <div class = "text category-name">For $category_name category</div>
                     <div class="buttons_grid_top grid_element"></div>
                     <div class="buttons_grid_left grid_element"></div>
                     <div class="buttons_grid_right grid_element"></div>
                 </div>
                 <div class="grid">
-                    <div class = "text">Article 6</div>
+                    <div class = "text for-article">Article 7</div>
+                    <div class = "text category-name">For $category_name category</div>
                     <div class="buttons_grid_top grid_element"></div>
                     <div class="buttons_grid_left grid_element"></div>
                     <div class="buttons_grid_right grid_element"></div>
                 </div>
                 <div class="grid">
-                    <div class = "text">Article 7</div>
+                    <div class = "text for-article">Article 8</div>
+                    <div class = "text category-name">For $category_name category</div>
                     <div class="buttons_grid_top grid_element"></div>
                     <div class="buttons_grid_left grid_element"></div>
                     <div class="buttons_grid_right grid_element"></div>
                 </div>
                 <div class="grid">
-                    <div class = "text">Article 8</div>
+                    <div class = "text for-article">Article 9</div>
+                    <div class = "text category-name">For $category_name category</div>
                     <div class="buttons_grid_top grid_element"></div>
                     <div class="buttons_grid_left grid_element"></div>
                     <div class="buttons_grid_right grid_element"></div>
                 </div>
                 <div class="grid">
-                    <div class = "text">Article 9</div>
+                    <div class = "text for-article">Article 10</div>
+                    <div class = "text category-name">For $category_name category</div>
                     <div class="buttons_grid_top grid_element"></div>
                     <div class="buttons_grid_left grid_element"></div>
                     <div class="buttons_grid_right grid_element"></div>
                 </div>
+            </div>
+        </div>
+        <div class="big-square right">
+            <div class="top">
+                <div class="title">Patterns</div>
+            </div>
+            <div class="window">
                 <div class="grid">
-                    <div class = "text">Article 10</div>
-                    <div class="buttons_grid_top grid_element"></div>
-                    <div class="buttons_grid_left grid_element"></div>
-                    <div class="buttons_grid_right grid_element"></div>
+                    <div class="text for-note">Pattern 1</div>
+                    <div class="buttons_grid_top_note grid_element"></div>
+                    <div class="buttons_grid_bottom_note grid_element"></div>
+                </div>
+                <div class="grid">
+                    <div class="text for-note">Pattern 2</div>
+                    <div class="buttons_grid_top_note grid_element"></div>
+                    <div class="buttons_grid_bottom_note grid_element"></div>
+                </div>
+                <div class="grid">
+                    <div class="text for-note">Pattern 3</div>
+                    <div class="buttons_grid_top_note grid_element"></div>
+                    <div class="buttons_grid_bottom_note grid_element"></div>
+                </div>
+                <div class="grid">
+                    <div class="text for-note">Pattern 4</div>
+                    <div class="buttons_grid_top_note grid_element"></div>
+                    <div class="buttons_grid_bottom_note grid_element"></div>
+                </div>
+                <div class="grid">
+                    <div class="text for-note">Pattern 5</div>
+                    <div class="buttons_grid_top_note grid_element"></div>
+                    <div class="buttons_grid_bottom_note grid_element"></div>
+                </div>
+                <div class="grid">
+                    <div class="text for-note">Pattern 6</div>
+                    <div class="buttons_grid_top_note grid_element"></div>
+                    <div class="buttons_grid_bottom_note grid_element"></div>
+                </div>
+                <div class="grid">
+                    <div class="text for-note">Pattern 7</div>
+                    <div class="buttons_grid_top_note grid_element"></div>
+                    <div class="buttons_grid_bottom_note grid_element"></div>
+                </div>
+                <div class="grid">
+                    <div class="text for-note">Pattern 8</div>
+                    <div class="buttons_grid_top_note grid_element"></div>
+                    <div class="buttons_grid_bottom_note grid_element"></div>
+                </div>
+                <div class="grid">
+                    <div class="text for-note">Pattern 9</div>
+                    <div class="buttons_grid_top_note grid_element"></div>
+                    <div class="buttons_grid_bottom_note grid_element"></div>
+                </div>
+                <div class="grid">
+                    <div class="text for-note">Pattern 10</div>
+                    <div class="buttons_grid_top_note grid_element"></div>
+                    <div class="buttons_grid_bottom_note grid_element"></div>
                 </div>
             </div>
         </div>

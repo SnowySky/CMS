@@ -229,62 +229,6 @@ select {
   padding-left: 9%;
   padding-bottom: 1%;
 }
-#window .rectangle .window .grid {
-  float: left;
-  height: 50%;
-  width: 20%;
-}
-#window .rectangle .window .grid:hover {
-  background-color: rgba(200, 100, 100, 0.3);
-  cursor: pointer;
-  line-height: normal;
-}
-#window .rectangle .window .grid:hover .text {
-  display: none;
-}
-#window .rectangle .window .grid:hover .grid_element {
-  display: block;
-}
-#window .rectangle .window .grid .text {
-  margin-top: 35%;
-  text-align: center;
-}
-#window .rectangle .window .grid .grid_element {
-  float: left;
-  height: 50%;
-  display: none;
-  -webkit-background-size: 50% 50%;
-  background-size: 50% 50%;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-#window .rectangle .window .grid .buttons_grid_top {
-  width: 100%;
-  background-image: url(img/eye.svg);
-}
-#window .rectangle .window .grid .buttons_grid_top:hover {
-  background-color: rgba(197, 204, 207, 0.25);
-  -webkit-background-size: 22%;
-  background-size: 22%;
-}
-#window .rectangle .window .grid .buttons_grid_left {
-  width: 50%;
-  background-image: url(img/note.svg);
-}
-#window .rectangle .window .grid .buttons_grid_left:hover {
-  background-color: rgba(197, 204, 207, 0.25);
-  -webkit-background-size: 43%;
-  background-size: 43%;
-}
-#window .rectangle .window .grid .buttons_grid_right {
-  width: 50%;
-  background-image: url(img/delete.svg);
-}
-#window .rectangle .window .grid .buttons_grid_right:hover {
-  background-color: rgba(197, 204, 207, 0.25);
-  -webkit-background-size: 43%;
-  background-size: 43%;
-}
 #window .rectangle .window form {
   padding-top: 2%;
 }
@@ -299,6 +243,89 @@ select {
 }
 #window .rectangle .window form select {
   width: 50%;
+}
+#window .grid {
+  float: left;
+  height: 50%;
+  width: 20%;
+}
+#window .grid:hover {
+  background-color: rgba(200, 100, 100, 0.3);
+  cursor: pointer;
+  line-height: normal;
+}
+#window .grid:hover .text {
+  display: none;
+}
+#window .grid:hover .grid_element {
+  display: block;
+}
+#window .grid .text {
+  text-align: center;
+}
+#window .grid .for-article {
+  margin-top: 35%;
+}
+#window .grid .for-note {
+  margin-top: 52%;
+}
+#window .grid .category-name {
+  font-size: 80%;
+  font-style: italic;
+}
+#window .grid .grid_element {
+  float: left;
+  height: 50%;
+  display: none;
+  -webkit-background-size: 50% 50%;
+  background-size: 50% 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#window .grid .buttons_grid_top {
+  width: 100%;
+  background-image: url(img/eye.svg);
+}
+#window .grid .buttons_grid_top:hover {
+  background-color: rgba(197, 204, 207, 0.25);
+  -webkit-background-size: 22%;
+  background-size: 22%;
+}
+#window .grid .buttons_grid_left {
+  width: 50%;
+  background-image: url(img/note.svg);
+}
+#window .grid .buttons_grid_left:hover {
+  background-color: rgba(197, 204, 207, 0.25);
+  -webkit-background-size: 43%;
+  background-size: 43%;
+}
+#window .grid .buttons_grid_right {
+  width: 50%;
+  background-image: url(img/delete.svg);
+}
+#window .grid .buttons_grid_right:hover {
+  background-color: rgba(197, 204, 207, 0.25);
+  -webkit-background-size: 43%;
+  background-size: 43%;
+}
+#window .grid .buttons_grid_top_note {
+  width: 100%;
+  background-image: url(img/note.svg);
+}
+#window .grid .buttons_grid_top_note:hover {
+  background-color: rgba(197, 204, 207, 0.25);
+  -webkit-background-size: 35%;
+  background-size: 35%;
+}
+#window .grid .buttons_grid_bottom_note {
+  width: 100%;
+  background-image: url(img/delete.svg);
+}
+#window .grid .buttons_grid_bottom_note:hover {
+  background-color: rgba(197, 204, 207, 0.25);
+  -webkit-background-size: 35%;
+  background-size: 35%;
 }
 #window .big-square {
   height: 49.9875%;

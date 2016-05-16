@@ -280,67 +280,6 @@ select{
         padding-left: 9%;
         padding-bottom: 1%;
       }
-
-      .grid{
-        float: left;
-        height: 50%;
-        width: 20%;
-
-        &:hover{
-          background-color: rgba(200,100,100,0.3);
-          cursor: pointer;
-          line-height: normal;
-
-          .text{
-            display: none;
-          }
-          .grid_element{
-            display: block;
-          }
-        }
-
-        .text{
-          margin-top: 35%;
-          text-align: center;
-        }
-
-        .grid_element{
-          float: left;
-          height: 50%;
-          display: none;
-          .backgroundAsIcon;
-        }
-
-        .buttons_grid_top{
-          width: 100%;
-          background-image: url(img/eye.svg);
-
-          &:hover{
-            background-color: @hoverColor;
-            background-size: 22%;
-          }
-        }
-
-        .buttons_grid_left{
-          width: 50%;
-          background-image: url(img/note.svg);
-
-          &:hover{
-            background-color: @hoverColor;
-            background-size: 43%;
-          }
-        }
-        .buttons_grid_right{
-          width: 50%;
-          background-image: url(img/delete.svg);
-
-          &:hover{
-            background-color: @hoverColor;
-            background-size: 43%;
-          }
-        }
-      }
-
       form:extend(.note){
         padding-top: 2%;
         textarea{
@@ -355,6 +294,81 @@ select{
         select{
           width: 50%;
         }
+      }
+    }
+  }
+  .grid{
+    float: left;
+    height: 50%;
+    width: 20%;
+    &:hover{
+      background-color: rgba(200,100,100,0.3);
+      cursor: pointer;
+      line-height: normal;
+      .text{
+        display: none;
+      }
+      .grid_element{
+        display: block;
+      }
+    }
+    .text{
+      text-align: center;
+    }
+    .for-article{
+      margin-top: 35%;
+    }
+    .for-note{
+      margin-top: 52%;
+    }
+    .category-name{
+      font-size: 80%;
+      font-style: italic;
+    }
+    .grid_element{
+      float: left;
+      height: 50%;
+      display: none;
+      .backgroundAsIcon;
+    }
+    .buttons_grid_top{
+      width: 100%;
+      background-image: url(img/eye.svg);
+      &:hover{
+        background-color: @hoverColor;
+        background-size: 22%;
+      }
+    }
+    .buttons_grid_left{
+      width: 50%;
+      background-image: url(img/note.svg);
+      &:hover{
+        background-color: @hoverColor;
+        background-size: 43%;
+      }
+    }
+    .buttons_grid_right{
+      width: 50%;
+      background-image: url(img/delete.svg);
+      &:hover{
+        background-color: @hoverColor;
+        background-size: 43%;
+      }
+    }
+    .buttons_grid_top_note{
+      width: 100%;
+      background-image: url(img/note.svg);
+      &:hover{
+        background-color: @hoverColor;
+        background-size: 35%;
+      }
+    }
+    .buttons_grid_bottom_note{
+      width: 100%;
+      background-image: url(img/delete.svg);
+      &:hover{
+        background-color: @hoverColor;
+        background-size: 35%;
       }
     }
   }
