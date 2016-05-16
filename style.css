@@ -229,6 +229,62 @@ select {
   padding-left: 9%;
   padding-bottom: 1%;
 }
+#window .rectangle .window .grid {
+  float: left;
+  height: 50%;
+  width: 20%;
+}
+#window .rectangle .window .grid:hover {
+  background-color: rgba(200, 100, 100, 0.3);
+  cursor: pointer;
+  line-height: normal;
+}
+#window .rectangle .window .grid:hover .text {
+  display: none;
+}
+#window .rectangle .window .grid:hover .grid_element {
+  display: block;
+}
+#window .rectangle .window .grid .text {
+  margin-top: 35%;
+  text-align: center;
+}
+#window .rectangle .window .grid .grid_element {
+  float: left;
+  height: 50%;
+  display: none;
+  -webkit-background-size: 50% 50%;
+  background-size: 50% 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#window .rectangle .window .grid .buttons_grid_top {
+  width: 100%;
+  background-image: url(img/eye.svg);
+}
+#window .rectangle .window .grid .buttons_grid_top:hover {
+  background-color: rgba(197, 204, 207, 0.25);
+  -webkit-background-size: 22%;
+  background-size: 22%;
+}
+#window .rectangle .window .grid .buttons_grid_left {
+  width: 50%;
+  background-image: url(img/note.svg);
+}
+#window .rectangle .window .grid .buttons_grid_left:hover {
+  background-color: rgba(197, 204, 207, 0.25);
+  -webkit-background-size: 43%;
+  background-size: 43%;
+}
+#window .rectangle .window .grid .buttons_grid_right {
+  width: 50%;
+  background-image: url(img/delete.svg);
+}
+#window .rectangle .window .grid .buttons_grid_right:hover {
+  background-color: rgba(197, 204, 207, 0.25);
+  -webkit-background-size: 43%;
+  background-size: 43%;
+}
 #window .rectangle .window form {
   padding-top: 2%;
 }

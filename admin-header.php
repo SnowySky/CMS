@@ -32,6 +32,13 @@
                 </div>
             </div>
             <div class="link">
+                Notes
+                <div class="sub-links">
+                    <div class="sub-link">New note</div>
+                    <div class="sub-link">List of notes</div>
+                </div>
+            </div>
+            <div class="link">
                 Plugins
             </div>
             <div class="link">
@@ -39,13 +46,6 @@
                 <div class="sub-links">
                     <div class="sub-link">New primitive</div>
                     <div class="sub-link">List of primitives</div>
-                </div>
-            </div>
-            <div class="link">
-                Notes
-                <div class="sub-links">
-                    <div class="sub-link">New note</div>
-                    <div class="sub-link">List of notes</div>
                 </div>
             </div>
             <div class="link">Settings</div>

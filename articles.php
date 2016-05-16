@@ -93,22 +93,78 @@
         </div>
         <div class="big-square right">
             <div class="top">
-                <div class="title">Save</div>
             </div>
             <div class="window">
                 <!--TODO: Скрипт, который переключает состояния locked и unlocked (если заполнены все поля - то класс должен быть unlocked, иначе - locked) -->
                 <div class="locked"></div>
             </div>
         </div>
-        <div class="rectangle left" id = "list_of_articles">
+        <div class="rectangle left">
             <div class="top">
-                <div class="title">List of articles</div>
+                <div class="title">Articles</div>
             </div>
             <div class="window">
+                <div class="grid">
+                    <div class = "text">Article 1</div>
+                    <div class="buttons_grid_top grid_element"></div>
+                    <div class="buttons_grid_left grid_element"></div>
+                    <div class="buttons_grid_right grid_element"></div>
+                </div>
+                <div class="grid">
+                    <div class = "text">Article 2</div>
+                    <div class="buttons_grid_top grid_element"></div>
+                    <div class="buttons_grid_left grid_element"></div>
+                    <div class="buttons_grid_right grid_element"></div>
+                </div>
+                <div class="grid">
+                    <div class = "text">Article 3</div>
+                    <div class="buttons_grid_top grid_element"></div>
+                    <div class="buttons_grid_left grid_element"></div>
+                    <div class="buttons_grid_right grid_element"></div>
+                </div>
+                <div class="grid">
+                    <div class = "text">Article 4</div>
+                    <div class="buttons_grid_top grid_element"></div>
+                    <div class="buttons_grid_left grid_element"></div>
+                    <div class="buttons_grid_right grid_element"></div>
+                </div>
+                <div class="grid">
+                    <div class = "text">Article 5</div>
+                    <div class="buttons_grid_top grid_element"></div>
+                    <div class="buttons_grid_left grid_element"></div>
+                    <div class="buttons_grid_right grid_element"></div>
+                </div>
+                <div class="grid">
+                    <div class = "text">Article 6</div>
+                    <div class="buttons_grid_top grid_element"></div>
+                    <div class="buttons_grid_left grid_element"></div>
+                    <div class="buttons_grid_right grid_element"></div>
+                </div>
+                <div class="grid">
+                    <div class = "text">Article 7</div>
+                    <div class="buttons_grid_top grid_element"></div>
+                    <div class="buttons_grid_left grid_element"></div>
+                    <div class="buttons_grid_right grid_element"></div>
+                </div>
+                <div class="grid">
+                    <div class = "text">Article 8</div>
+                    <div class="buttons_grid_top grid_element"></div>
+                    <div class="buttons_grid_left grid_element"></div>
+                    <div class="buttons_grid_right grid_element"></div>
+                </div>
+                <div class="grid">
+                    <div class = "text">Article 9</div>
+                    <div class="buttons_grid_top grid_element"></div>
+                    <div class="buttons_grid_left grid_element"></div>
+                    <div class="buttons_grid_right grid_element"></div>
+                </div>
+                <div class="grid">
+                    <div class = "text">Article 10</div>
+                    <div class="buttons_grid_top grid_element"></div>
+                    <div class="buttons_grid_left grid_element"></div>
+                    <div class="buttons_grid_right grid_element"></div>
+                </div>
             </div>
-        </div>
-        <div class="big-square right">
-
         </div>
     </div>
 <?php require_once "admin-footer.php"; ?>

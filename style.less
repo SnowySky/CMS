@@ -14,9 +14,19 @@
 .lightBorderBottom(){
   border-bottom: @min-border-size solid @bordercolor;
 }
+.lightBorderBottomTop(){
+  border-bottom: @min-border-size solid @bordercolor;
+  border-top: @min-border-size solid @bordercolor;
+}
 .lightBordersRightBottom(){
   border-right: @min-border-size solid @bordercolor;
   border-bottom: @min-border-size solid @bordercolor;
+}
+.darkBorderBottom(){
+  border-bottom: @min-border-size solid black;
+}
+.darkBorderRight(){
+  border-right: @min-border-size solid black;
 }
 //set active background like an icon on a main page
 .backgroundAsIcon(){
@@ -269,6 +279,66 @@ select{
       .meta_text{
         padding-left: 9%;
         padding-bottom: 1%;
+      }
+
+      .grid{
+        float: left;
+        height: 50%;
+        width: 20%;
+
+        &:hover{
+          background-color: rgba(200,100,100,0.3);
+          cursor: pointer;
+          line-height: normal;
+
+          .text{
+            display: none;
+          }
+          .grid_element{
+            display: block;
+          }
+        }
+
+        .text{
+          margin-top: 35%;
+          text-align: center;
+        }
+
+        .grid_element{
+          float: left;
+          height: 50%;
+          display: none;
+          .backgroundAsIcon;
+        }
+
+        .buttons_grid_top{
+          width: 100%;
+          background-image: url(img/eye.svg);
+
+          &:hover{
+            background-color: @hoverColor;
+            background-size: 22%;
+          }
+        }
+
+        .buttons_grid_left{
+          width: 50%;
+          background-image: url(img/note.svg);
+
+          &:hover{
+            background-color: @hoverColor;
+            background-size: 43%;
+          }
+        }
+        .buttons_grid_right{
+          width: 50%;
+          background-image: url(img/delete.svg);
+
+          &:hover{
+            background-color: @hoverColor;
+            background-size: 43%;
+          }
+        }
       }
 
       form:extend(.note){
