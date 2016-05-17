@@ -53,4 +53,4 @@
             </div>
         </div>
     </div>
-<?php require_once "admin-footer.php"; 1?>
+<?php require_once "admin-footer.php";?>
