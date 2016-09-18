@@ -1,0 +1,113 @@
+.big-margin {
+    margin-top: 24px
+}
+
+.middle-margin {
+    margin-top: 12px
+}
+
+.small-margin {
+    margin-top: 8px
+}
+
+.big-margin-block{
+  margin: 0 24px;
+}
+.middle-margin-block{
+  margin: 0 12px;
+}
+.small-margin-block{
+  margin: 0 8px;
+}
+.slider {
+    position: absolute;
+    width: 100%;
+    height: 400px;
+    margin-top: 50px;
+    background-image: url(1.jpg);
+    z-index: 0
+}
+
+.main-content-block {
+    position: absolute;
+    width: 100%;
+    min-height: 800px;
+    margin-top: 450px;
+    -webkit-box-shadow: 0 -10px 28px 0 rgba(50, 50, 50, .45);
+    box-shadow: 0 -10px 28px 0 rgba(50, 50, 50, .45);
+    z-index: 1
+}
+
+.block-title {
+    color: #C00;
+    font-size: 24px;
+    font-family: "Open Sans Light"
+}
+
+.block-description {
+    color: #000;
+    font-size: 14px;
+    font-family: "Open Sans Light"
+}
+
+.project-example {
+    height: 300px;
+    margin-top: 12px;
+    background-color: gray;
+}
+.advantage{
+    margin-top: 24px;
+    height: 264px;
+    width: 264px;
+    background-color: gray;
+}
+.achiev-example {
+    height: 200px;
+    margin-top: 12px;
+    background-color: gray
+}
+.carousel{
+    height: 450px;
+}
+.footer{
+    background-color:dimgray;
+    color:white;
+    height: 200px;
+    font-size: 14px;
+}
+
+ @media screen and (max-width: 1170px) {
+     .advantage{
+         height: 350px;
+         width: 400px;
+         margin-top: 24px;
+         
+     }
+   }
+@media screen and (max-width: 980px) {
+     .advantage{
+         height: 320px;
+         width: 320px;
+         margin-top: 24px;
+         
+     }
+   }
+@media screen and (max-width: 750px) {
+     .advantage{
+         height: 290px;
+         width: 290px;
+         margin-top: 24px;
+         
+     }
+    .info{
+        margin: 0 auto;
+    }
+   }
+@media screen and (max-width: 680px) {
+     .advantage{
+         height: 225px;
+         width: 225px;
+         margin-top: 24px;
+         
+     }
+   }
